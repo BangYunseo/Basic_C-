@@ -1,5 +1,6 @@
 #define _CRT_SECURE_NO_WARNINGS
 #include <iostream>
+#include <string>
 
 using namespace std;
 
@@ -33,11 +34,13 @@ void msg(int id, string text = ""){
 int main(){
   // star() 호출
   star();
+  
   // star(); == star(5);
   star(10);
 
   // msg() 호출
   msg();
+  
   // msg(); == msg(10, "");
   msg(10, "Hello!");
 }
