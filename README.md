@@ -3,7 +3,7 @@
 
 ## 목차
 ### ch01 - [C++소개](https://github.com/BangYunseo/TIL/blob/main/Cpp/ch01_IntroduceC%2B%2B.md)
-### ch02 - [C++기초]()
+### ch02 - [C++기초](https://github.com/BangYunseo/TIL/blob/main/Cpp/ch02_BasicC++.md)
 ### ch03 - []()
 ### ch04 - []()
 ### ch05 - []()
