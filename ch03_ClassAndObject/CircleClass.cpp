@@ -25,3 +25,7 @@ int main(){
   area = pizza.getArea();
   cout << "피자의 면적은 " << area << endl;
 }
+
+// 출력 예시
+// 도넛의 면적은 28.26
+// 피자의 면적은 7850
