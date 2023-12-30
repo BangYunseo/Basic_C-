@@ -19,23 +19,31 @@ public:
 };
 
 int main(){
-  Circle *p, *q;
-
-  p = new Circle;
-  q = new Circle(30);
-
-  cout << p->getArea() << endl;
-  cout << q->getArea() << endl;
-
-  delete p;
-  delete q;
-  // 생성한 순서에 관계 없이 원하는 순서대로 delete 연산자 사용 가능
+  int n;
+  while(true){
+    cout << "정수 반지름 입력(음수가 입력되면 종료) >> ";
+    cin >> n;
+    // 입력받는 코드
+    
+    if (n < 0) break;
+    // 음수가 입력되면 종료
+    
+    Circle *p = new Circle(n);
+    // 동적 객체 생성
+    cout << "원의 면적은 " << p->getArea() << endl;
+    delete p;
+    // 객체 반환
+    // 만약 delete 연산자를 사용하지 않았다면 메모리 누수가 발생
+  }
 }
 
 // 출력 예시
-// 생성자 실행 radius = 1
-// 생성자 실행 radius = 30
-// 3.14
-// 2826
-// 소멸자 실행 radius = 1
-// 소멸자 실행 radius = 30
+// 정수 반지름 입력(음수가 입력되면 종료 >> 5
+// 생성자 실행 radius = 5
+// 원의 면적은 78.5
+// 소멸자 실행 radius = 5
+// 정수 반지름 입력(음수가 입력되면 종료 >> 9
+// 생성자 실행 radius = 9
+// 원의 면적은 254.34
+// 소멸자 실행 radius = 9
+// 정수 반지름 입력(음수가 입력되면 종료 >> -1
