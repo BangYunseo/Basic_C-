@@ -13,10 +13,10 @@ public:
     cout << "Kick = " << kick << ',' << " Punch = " << punch << endl;
   }
   Power operator+(int op2);
-  // + 연산자 함수 선언
+  // 정수 + 연산자 함수 선언
 };
 
-// + 연산자 함수 구현
+// 정수 + 연산자 함수 구현
 Power Power::operator+(int op2){
   Power tmp;
   // 임시 객체 생성
